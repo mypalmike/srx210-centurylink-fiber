@@ -131,6 +131,13 @@ routing-options {
     }
 }
 security {
+    flow {
+        tcp-mss {
+            all-tcp {
+                mss 1352;
+            }
+        }
+    }
     screen {
         ids-option untrust-screen {
             icmp {
